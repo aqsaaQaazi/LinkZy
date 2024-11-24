@@ -24,7 +24,7 @@
 
 ## 💻 How to Use
 
-1. Visit the [LinkZy web app](https://linkzy.app).
+1. Visit the [LinkZy web app](https://linkzy.vercel.app).
 2. Paste your long URL into the input box.
 3. Click the **"Shorten"** button.
 4. Copy your shortened URL and share it wherever you like!
