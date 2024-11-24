@@ -51,7 +51,8 @@ Want to run LinkZy locally or contribute? Follow these steps:
 
 3. Set up your **Bit.ly API Key**:
    - Create an `.env.local` file and add your **Bit.ly API Key**:
-   `BITLY_API_KEY=your_bitly_api_key_here`
+   `const BITLY_API_URL = "https://api-ssl.bitly.com/v4/shorten"`;
+    `const BITLY_ACCESS_TOKEN = process.env.NEXT_PUBLIC_BITLY_ACCESS_TOKEN;`
 
 4. Run the project locally:
    `npm run dev`

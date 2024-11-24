@@ -1,7 +1,7 @@
-import Image from "next/image";
+import RunTime from "@/components/app";
 
 export default function Home() {
   return (
-    <h1>HELLO</h1>
+    <RunTime/>
   );
 }
