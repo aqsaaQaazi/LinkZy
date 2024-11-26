@@ -47,7 +47,7 @@ export default function RunTime() {
   return (
 
     <>
-    // ---------------SEO Head Component--------------
+    {/* // ---------------SEO Head Component-------------- */}
 
     <Head>
       <title>LinkZy - Free and Fast URL Shortener</title>
@@ -55,7 +55,7 @@ export default function RunTime() {
       <meta name="keywords" content="best free URL shortener for marketers ,URL shortener, link shortener, free short links, link trimmer, new link generator, new url generator tool, linkzy" />
     </Head>
 
-    // --------------BODY--------------------
+    {/* // --------------BODY-------------------- */}
     <div className="flex flex-col items-center space-y-6 p-6 m-auto mt-48 mb-48 bg-[#F7FAFC] rounded-lg shadow-lg max-w-full sm:max-w-md">
       {/* Header */}
       <div className="text-center">
@@ -112,6 +112,13 @@ export default function RunTime() {
           </Button>
         </div>
       )}
+<div>
+  <p className="text-[#333333] text-sm mt-4">
+          " Made by{" "}
+          <a 
+          href="https://tinyurl.com/26clt3od">Aqsaa Qaazi</a>
+          . "</p>
+</div>
     </div>
     </>
   );
