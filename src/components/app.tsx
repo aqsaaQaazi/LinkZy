@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { CopyIcon } from "lucide-react";
 import axios from "axios";
 
-// API constants
+// API var
 const TINYURL_API = "https://tinyurl.com/api-create.php?url=";
 
 export default function RunTime() {
@@ -44,7 +44,7 @@ export default function RunTime() {
   };
 
   return (
-    <div className="flex flex-col items-center space-y-6 p-6 bg-[#F7FAFC] rounded-lg shadow-lg">
+    <div className="flex flex-col items-center space-y-6 p-6 m-auto mt-48 mb-48 bg-[#F7FAFC] rounded-lg shadow-lg max-w-full sm:max-w-md">
       {/* Header */}
       <div className="text-center">
         <h1 className="text-[#333333] text-3xl font-semibold">LinkZy</h1>
@@ -58,31 +58,31 @@ export default function RunTime() {
         <div className="flex flex-col space-y-2">
           <Input
             type="url"
-            placeholder="Enter URL"
+            placeholder="Your Link here..."
             value={originalLink}
             onChange={(e) => setOriginalLink(e.target.value)}
             required
             aria-label="Enter the URL to shorten"
-            className="border p-2 rounded-lg w-full"
+            className="border rounded-full p-2 w-full placeholder:opacity-25"
           />
 
           <button
             type="submit"
             aria-label="Submit URL for shortening"
             className="bg-[#4caf50] text-white py-2 px-4 rounded-md hover:bg-green-600 w-full tracking-wide font-semibold text-lg"
-            disabled={loading} // Disable button when loading
+            disabled={loading} 
           >
             {loading ? "Shortening..." : "Shorten"}
           </button>
         </div>
 
-        {/* Error Message */}
+        {/* Error */}
         {error && <div className="text-[#FF6347] text-sm mt-2">{error}</div>}
       </form>
 
-      {/* Shortened URL Section */}
+      {/* output */}
       {shortLink && (
-        <div className="w-full max-w-md flex flex-col items-center mt-4 space-y-4">
+        <div className="w-full flex flex-col items-center mt-4 space-y-4">
           <Input
             type="text"
             value={shortLink}
@@ -92,7 +92,7 @@ export default function RunTime() {
 
           <Button
             onClick={handleCopy}
-            className="bg-[#007BFF] text-white py-2 px-4 rounded-md hover:bg-blue-600 w-full"
+            className="bg-[#007BFF] text-white py-2 px-4 rounded-md hover:bg-blue-600 w-full sm:w-auto"
             aria-label="Copy shortened URL to clipboard"
           >
             <CopyIcon />
