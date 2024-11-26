@@ -1,13 +1,13 @@
 # LinkZy 🌐
 
-**LinkZy** is a fast and user-friendly URL shortening service that helps you share links effortlessly. With a sleek design powered by **Next.js** and **React**, LinkZy lets you quickly shorten long URLs using the **Bit.ly API** — no sign-up required. Whether you're a blogger, developer, influencer, or just a general user, LinkZy makes link sharing cleaner and more convenient!
+**LinkZy** is a fast and user-friendly URL shortening service that helps you share links effortlessly. With a sleek design powered by **Next.js** and **React**, LinkZy lets you quickly shorten long URLs using the **TinyURL's API** — no sign-up required. Whether you're a blogger, developer, influencer, or just a general user, LinkZy makes link sharing cleaner and more convenient!
 
 ## 🚀 Features
 
 - **Instant URL Shortening**: Simply paste your long URL, and get a shortened link within seconds.
 - **No Signup Required**: Start shortening links right away without the need to create an account.
-- **Powered by Bit.ly API**: Trusted, fast, and reliable URL shortening from Bit.ly.
-- **Sleek UI**: A beautiful, responsive design built with **Next.js**, **Tailwind CSS**, and **Shadcn UI** components.
+- **Powered by TinyURL's API**: Trusted, fast, and reliable URL shortening from TinyURL.
+- **Sleek UI**: A beautiful, responsive design built with **Next.js** & **Tailwind CSS**.
 - **Perfect for Anyone**: Whether you’re a blogger, developer, influencer, or just sharing links for fun, LinkZy is your go-to tool.
 
 ## 🛠️ Technologies Used
@@ -15,10 +15,9 @@
 - **Frontend**:
   - **Next.js**: A fast React framework for server-side rendering and static site generation.
   - **TypeScript**: For better type safety and development efficiency.
-  - **Shadcn UI**: Beautiful, reusable UI components that make development faster and easier.
   - **Tailwind CSS**: Utility-first CSS framework for rapid styling.
 - **Backend**:
-  - **Bit.ly API**: For fast and reliable URL shortening.
+  - **TinyURL's API**: For fast and reliable URL shortening.
 - **Deployment**:
   - **Vercel**: Fast and scalable hosting for seamless performance.
 
@@ -34,7 +33,7 @@ It’s that simple — no account, no hassle.
 ## 🌍 Why Choose LinkZy?
 
 - **Instant and Simple**: Shorten links in just a few clicks.
-- **Fast and Reliable**: Powered by the Bit.ly API for seamless performance.
+- **Fast and Reliable**: Powered by the TinyURL's API for seamless performance.
 - **No Signup**: Skip the sign-up process and start shortening right away.
 - **Sleek, Modern Design**: With a focus on simplicity and speed, LinkZy’s UI is designed to give you a smooth user experience.
 
@@ -49,10 +48,10 @@ Want to run LinkZy locally or contribute? Follow these steps:
    `cd LinkZy`
    `npm install`
 
-3. Set up your **Bit.ly API Key**:
-   - Create an `.env.local` file and add your **Bit.ly API Key**:
-   `const BITLY_API_URL = "https://api-ssl.bitly.com/v4/shorten"`;
-    `const BITLY_ACCESS_TOKEN = process.env.NEXT_PUBLIC_BITLY_ACCESS_TOKEN;`
+3. Set up your **TinyURL's API Key**:
+   - Create an `.env.local` file and add your **TinyURL's API Key**:
+   `const TINYURL_API = "https://tinyurl.com/api-create.php?url={}"`
+    
 
 4. Run the project locally:
    `npm run dev`
