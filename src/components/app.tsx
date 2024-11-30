@@ -46,7 +46,8 @@ export default function RunTime() {
 
   return (
 
-    <>
+    < >
+    <div className=" h-[500px] w-full bg-gradient-to-r from-fuchsia-950 to-purple-500 flex flex-col">
     {/* // ---------------SEO Head Component-------------- */}
 
     <Head>
@@ -56,32 +57,32 @@ export default function RunTime() {
     </Head>
 
     {/* // --------------BODY-------------------- */}
-    <div className="flex flex-col items-center space-y-6 p-6 m-auto mt-48 mb-48 bg-[#F7FAFC] rounded-lg shadow-lg max-w-full sm:max-w-md">
+    <div className="flex flex-col items-center space-y-10 p-10 m-auto  bg-gradient-to-tr from-fuchsia-800 to-indigo-500  rounded-xl shadow-[10px_13px_73px_29px_rgba(236,_72,_153,_0.5)] sm:max-w-md">
       {/* Header */}
       <div className="text-center">
-        <h1 className="text-[#333333] text-3xl font-semibold">LinkZy</h1>
-        <h3 className="text-[#333333] text-lg mt-2">
+        <h1 className="text-[#ece7f0] text-3xl font-semibold">LinkZy</h1>
+        <h3 className="text-[#c5b9b9] text-lg mt-2">
           Fast, Clean, and Shareable Links — Instantly
         </h3>
       </div>
 
       {/* Form Section */}
       <form onSubmit={handleSubmit} className="w-full max-w-md space-y-4">
-        <div className="flex flex-col space-y-2">
+        <div className="flex flex-col space-y-2 text-white">
           <Input
             type="url"
-            placeholder="Your Link here..."
+            placeholder ="Your Link here..."
             value={originalLink}
             onChange={(e) => setOriginalLink(e.target.value)}
             required
             aria-label="Enter the URL to shorten"
-            className="border rounded-full p-2 w-full placeholder:opacity-25"
+            className="border border-fuchsia-400 rounded-full p-2 w-full placeholder:opacity-25"
           />
 
           <button
             type="submit"
             aria-label="Submit URL for shortening"
-            className="bg-[#4caf50] text-white py-2 px-4 rounded-md hover:bg-green-600 w-full tracking-wide font-semibold text-lg"
+            className="border rounded-full px-2 py-2 opacity-100 shadow text-md normal-case font-light bg-purple-600 text-white shadow-blue-500/50 bg-transparent border-current"
             disabled={loading} 
           >
             {loading ? "Shortening..." : "Shorten"}
@@ -89,7 +90,7 @@ export default function RunTime() {
         </div>
 
         {/* Error */}
-        {error && <div className="text-[#FF6347] text-sm mt-2">{error}</div>}
+        {error && <div className="text-[#d6d8d8] text-sm mt-2">{error}</div>}
       </form>
 
       {/* output */}
@@ -104,7 +105,7 @@ export default function RunTime() {
 
           <Button
             onClick={handleCopy}
-            className="bg-[#007BFF] text-white py-2 px-4 rounded-md hover:bg-blue-600 w-full sm:w-auto"
+            className="bg-[#9f4caa] text-white py-2 px-4 rounded-md hover:bg-purple-600 w-full sm:w-auto"
             aria-label="Copy shortened URL to clipboard"
           >
             <CopyIcon />
@@ -113,13 +114,16 @@ export default function RunTime() {
         </div>
       )}
 <div>
-  <p className="text-[#333333] text-sm mt-4">
+  <p className="text-[#cf7ddd] text-sm mt-4">
           " Made by{" "}
           <a 
           href="https://tinyurl.com/26clt3od">Aqsaa Qaazi</a>
           . "</p>
 </div>
     </div>
+    </div>
     </>
   );
 }
+
+  
