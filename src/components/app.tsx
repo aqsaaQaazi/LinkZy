@@ -117,8 +117,8 @@ export default function RunTime() {
         {/* Footer */}
         <div className="text-center mt-6">
           <p className="text-[#cf7ddd] text-sm">
-            " Made by{" "}
-            <a href="https://tinyurl.com/26clt3od" className="hover:text-white transition-colors duration-150 ease-in-out">Aqsaa Qaazi</a> . "
+            ' Made by{" "}
+            <a href="https://tinyurl.com/26clt3od" className="hover:text-white transition-colors duration-150 ease-in-out">Aqsaa Qaazi</a> . '
           </p>
         </div>
       </div>
