@@ -15,7 +15,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "LinkZy",
-  description: "URL shortner.",
+  description: "free, Fast and hasslefree URL shortner.",
 };
 
 export default function RootLayout({
