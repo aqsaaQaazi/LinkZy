@@ -4,7 +4,6 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { CopyIcon } from "lucide-react";
 import axios from "axios";
-import Head from "next/head";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { faExclamationTriangle } from "@fortawesome/free-solid-svg-icons/faExclamationTriangle";
 
@@ -48,18 +47,7 @@ export default function RunTime() {
 
   return (
     <div className="h-screen w-full bg-gradient-to-tr from-black to-fuchsia-950 flex flex-col">
-      {/* SEO Head Component */}
-      <Head>
-        <title>LinkZy - Free and Fast URL Shortener</title>
-        <meta
-          name="description"
-          content="LinkZy lets you instantly shorten links with a hassle-free, fast, and shareable interface. No sign-up required, Simplify Link Management today.!"
-        />
-        <meta
-          name="keywords"
-          content="best free URL shortener for marketers ,URL shortener, link shortener, free short links, link trimmer, new link generator, new url generator tool, linkzy"
-        />
-      </Head>
+     
 
       {/* BODY */}
       <div className="flex flex-col justify-center items-center p-8 sm:p-12 md:p-16 m-auto bg-gradient-to-tr from-fuchsia-800 to-black rounded-xl sm:max-w-md w-full space-y-6">
