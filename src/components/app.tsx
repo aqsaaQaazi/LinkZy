@@ -29,11 +29,16 @@ export default function RunTime() {
         `${TINYURL_API}${encodeURIComponent(originalLink)}`
       );
       setShortLink(response.data); //returns expected response directly
-    } catch (error: any) {
-      setError(
-        error?.response?.data?.message ||
-          "Error shortening link. Please try again."
-      );
+    } catch (error: unknown) {
+      if (axios.isAxiosError(error)){
+        
+          setError(
+            error?.response?.data?.message ||
+              "Error shortening link. Please try again."
+          );
+      } else {
+        setError("An unexpected error occurred.!")
+      }
     } finally {
       setLoading(false); // Stop loading
     }
@@ -117,11 +122,13 @@ export default function RunTime() {
         {/* Footer */}
         <div className="text-center mt-6">
           <p className="text-[#cf7ddd] text-sm">
-            ' Made by{" "}
-            <a href="https://tinyurl.com/26clt3od" className="hover:text-white transition-colors duration-150 ease-in-out">Aqsaa Qaazi</a> . '
+          &apos; Made by{" "}
+            <a href="https://tinyurl.com/26clt3od" className="hover:text-white transition-colors duration-150 ease-in-out">Aqsaa Qaazi</a> . &apos;
           </p>
         </div>
       </div>
     </div>
   );
+
+
 }

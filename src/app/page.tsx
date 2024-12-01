@@ -18,7 +18,7 @@ export default function Home() {
         />
 
         {/* favicon doesnt work anyways :/ */}
-        {/* <link rel="icon" href="/favicon.png" type="image/png" /> */}
+        <link rel="icon" href="/favicon.png" type="image/png" />
       </Head>
 
     <RunTime/>
