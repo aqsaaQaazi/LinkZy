@@ -75,7 +75,7 @@ export default function RunTime() {
               onChange={(e: { target: { value: React.SetStateAction<string>; }; }) => setOriginalLink(e.target.value)}
               required
               aria-label="Enter the URL to shorten"
-              className="border border-purple-300 rounded-full  text-white p-3 pl-4 pr-16 w-full placeholder:opacity-25 focus:ring-2 focus:ring-fuchsia-600 focus:transition-all duration-300 py-6"
+              className="border border-purple-300 rounded-full  text-white p-3 pl-4 pr-24 w-full placeholder:opacity-25 focus:ring-2 focus:ring-fuchsia-600 focus:transition-all duration-300 py-6"
             />
 
             {/* Shorten Button */}
